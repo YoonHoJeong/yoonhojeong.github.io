@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>윤호정 - 개발자</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+                line-height: 1.6;
+                color: #333;
+                background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                min-height: 100vh;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .container {
+                background: white;
+                border-radius: 20px;
+                padding: 60px 40px;
+                box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+                text-align: center;
+                max-width: 500px;
+                width: 90%;
+            }
+
+            .profile-img {
+                width: 120px;
+                height: 120px;
+                border-radius: 50%;
+                background: linear-gradient(45deg, #667eea, #764ba2);
+                margin: 0 auto 30px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 48px;
+                color: white;
+                font-weight: bold;
+            }
+
+            h1 {
+                font-size: 2.5em;
+                margin-bottom: 10px;
+                color: #2c3e50;
+            }
+
+            .subtitle {
+                font-size: 1.2em;
+                color: #7f8c8d;
+                margin-bottom: 30px;
+            }
+
+            .description {
+                font-size: 1.1em;
+                color: #555;
+                margin-bottom: 40px;
+                line-height: 1.8;
+            }
+
+            .links {
+                display: flex;
+                gap: 20px;
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+
+            .link {
+                display: inline-block;
+                padding: 12px 24px;
+                background: linear-gradient(45deg, #667eea, #764ba2);
+                color: white;
+                text-decoration: none;
+                border-radius: 25px;
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+                font-weight: 500;
+            }
+
+            .link:hover {
+                transform: translateY(-2px);
+                box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+            }
+
+            .footer {
+                margin-top: 40px;
+                padding-top: 20px;
+                border-top: 1px solid #eee;
+                color: #999;
+                font-size: 0.9em;
+            }
+
+            @media (max-width: 600px) {
+                .container {
+                    padding: 40px 20px;
+                }
+
+                h1 {
+                    font-size: 2em;
+                }
+
+                .links {
+                    flex-direction: column;
+                    align-items: center;
+                }
+
+                .link {
+                    width: 200px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="profile-img">윤</div>
+
+            <h1>윤호정</h1>
+            <p class="subtitle">개발자 / Developer</p>
+
+            <p class="description">안녕하세요. 개발자 윤호정입니다.</p>
+
+            <div class="links">
+                <a href="https://github.com/yoonhojeong" class="link" target="_blank">GitHub</a>
+            </div>
+
+            <div class="footer">
+                <p>&copy; 2025 윤호정. All rights reserved.</p>
+            </div>
+        </div>
+    </body>
+</html>
